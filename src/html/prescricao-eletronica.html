@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/src/css/style-prescricao-eletronica.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=New+Rocker&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+</head>
+
+<body>
+    <aside>
+
+        <button id="toggle-menu" class="toggle-btn">☰</button>
+        <div class="logo">
+            <h2>Menu</h2>
+            <img src="/src/img/logo1.png" alt="Logo AOBA">
+        </div>
+        <nav>
+            <div Class="Dash">
+                <a href="dashboard.html"><img src="/src/img/grafico-preditivo.png" alt="grafico">Dashboard</a>
+            </div>
+
+            <div Class="Calendar">
+                <a href="calendario.html">
+                    <img src="/src/img/calendar.png" alt="crudInterno">Agendamentos
+                </a>
+            </div>
+
+            <div Class="Prontuario">
+                <a href="prontuario.html">
+                    <img src="/src/img/perfil-de-usuario.png" alt="user">Prontuário eletrônico
+                </a>
+            </div>
+
+            <div class="prescricao">
+                <a href="http://127.0.0.1:5500/prescricao-eletronica.html"><img src="/src/img/prescricao.png"
+                        alt="user">Prescrição Eletrônica</a>
+            </div>
+
+            <div Class="Leito">
+                <a href="leito.html">
+                    <img src="/src/img/leito.png" alt="leito">Leitos
+                </a>
+            </div>
+
+            <div Class="CrudPaciente">
+                <a href="crud-paciente.html">
+                    <img src="/src/img/crud-paciente.png" alt="crudPaciente">Cadastro Paciente
+                </a>
+            </div>
+
+            <div Class="CrudInterno">
+                <a href="crud-interno.html">
+                    <img src="/src/img/crud-interno.png" alt="crudInterno">Cadastro Interno
+                </a>
+            </div>
+
+            <div Class="Config">
+                <a href="config.html">
+                    <img src="/src/img/engrenagem.png" alt="engrenagem">Configurações
+                </a>
+            </div>
+
+        </nav>
+    </aside>
+
+    <main>
+        <header>
+            <h1>Prescrição Eletrônica</h1>
+        </header>
+
+        <form>
+            <section class="cards">
+                <div class="card">
+                    <h2>Dados do Paciente</h2>
+
+                    <div class="form-group">
+                        <label for="pacientePrescricao">Nome do Paciente</label><br>
+                        <input type="text" id="pacientePrescricao" placeholder="Nome do Paciente">
+                        <span class="error-message" id="pacienteError"></span>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cpfPrescricao">CPF</label><br>
+                        <input type="text" id="cpfPrescricao" placeholder="CPF">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dataNascimento">Data de Nascimento</label><br>
+                        <input type="date" id="dataNascimento">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="genero">Gênero</label><br>
+                        <input type="text" id="genero" placeholder="Gênero">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label><br>
+                        <input type="text" id="telefone" placeholder="Telefone">
+                    </div>
+                </div>
+            </section>
+
+            <section class="cards">
+                <div class="card">
+                    <h2>Medicamento</h2>
+
+                    <div class="form-group">
+                        <label for="tratamento">Tratamento</label><br>
+                        <input type="text" id="tratamento" placeholder="Tratamento">
+                    </div>
+
+                    <div class="medicamentos">
+
+                        <div class="form-group">
+                            <label for="medicacao">Medicação</label><br>
+                            <input type="text" id="medicacao" placeholder="Medicação">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dosagem">Dosagem</label><br>
+                            <input type="text" id="dosagem" placeholder="Dosagem">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="orientacaoPrescricao">Orientação</label><br>
+                            <input type="text" id="orientacaoPrescricao" placeholder="Orientação">
+                        </div>
+
+                        <button type="button" id="adicionarMedicamento">+ Adicionar Medicamento </button>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="cards">
+                <div class="card">
+                    <h2>Médico Responsável</h2>
+
+                    <div class="form-group">
+                        <label for="medicoPrescricao">Médico</label><br>
+                        <input type="text" id="medicoPrescricao" placeholder="Médico">
+                        <span class="error-message" id="medicoError"></span>
+
+                    </div>
+
+                    <button id="btnCadastrar" type="submit">Cadastrar</button>
+
+                </div>
+
+            </section>
+        </form>
+
+        <footer>© 2025 - AOBA</footer>
+    </main>
+    <script src="https://unpkg.com/imask "></script>
+    <script src="/src/script/script-prescricao-eletronica.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ 
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cadastro AOBA</title>
+<link rel="stylesheet" href="/src/css/style-cadastro.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=New+Rocker&display=swap"
+
+    rel="stylesheet">
+</head>
+ 
+<body>
+<div class="cadastro-container">
+<div class="cadastro-form">
+<div class="form-content">
+<div class="topo-fixo">
+<img src="/src/img/logo.png" alt="Logo AOBA" class="logo" />
+<h1>Cadastro</h1>
+</div>
+ 
+        <form action="login.html" class="form-area">
+<div class="form-scroll-area">
+<div class="form-group">
+<label for="nome">Nome Completo</label>
+<input type="text" id="nome" name="nome" placeholder="Digite seu nome" required />
+</div>
+ 
+            <div class="form-group">
+<label for="telefone">Telefone</label>
+<input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required />
+</div>
+ 
+            <div class="form-group">
+<label for="cep">CEP</label>
+<input type="text" id="cep" name="cep" placeholder="00000-000" />
+</div>
+ 
+            <div class="form-group">
+<label for="endereco">Endereço</label>
+<input type="text" id="endereco" name="endereco" placeholder="Rua, número, complemento" />
+</div>
+ 
+            <div class="form-group">
+<label for="cidade">Cidade</label>
+<input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade" />
+</div>
+ 
+            <div class="form-group">
+<label for="estado">Estado</label>
+<input type="text" id="estado" name="estado" placeholder="Digite seu estado" />
+</div>
+ 
+            <div class="form-group">
+<label for="email">E-mail</label>
+<input type="email" id="email" name="email" placeholder="Digite seu e-mail" required />
+</div>
+ 
+            <div class="form-group">
+<label for="senha">Senha</label>
+<input type="password" id="senha" name="senha" placeholder="Crie uma senha" required />
+</div>
+ 
+            <div class="form-group">
+<label for="confirmar-senha">Confirmar Senha</label>
+<input type="password" id="confirmar-senha" name="confirmar_senha" placeholder="Repita a senha" required />
+</div>
+</div>
+ 
+          <!-- Botão de envio dentro do form -->
+<div class="form-button">
+<button type="submit">Confirmar</button>
+</div>
+</form>
+ 
+      </div>
+</div>
+ 
+    <div class="cadastro-image">
+<img src="/src/img/hospital.png" alt="Imagem de cuidado médico" />
+</div>
+</div>
+<script src="https://unpkg.com/imask "></script>
+<script src="/src/script/cadastro.js"></script>
+</body>
+ 
+</html>
+ 

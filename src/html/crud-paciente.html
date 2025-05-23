@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="/src/css/style-crud-pacientes.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=New+Rocker&display=swap"rel="stylesheet">
+</head>
+<body>
+  
+
+<aside>
+  <button id="toggle-menu" class="toggle-btn">☰</button>
+    <div class="logo">
+      <h2>Menu</h2>
+        <img src="/src/img/logo1.png" alt="Logo AOBA">
+    </div>
+  <nav>
+    <div class="Dash">
+      <a href="Dashboard.html"><img src="/src/img/grafico-preditivo.png" alt="grafico">Dashboard</a>
+    </div>
+    <div Class="Calendar">
+      <a href="calendario.html"><img src="/src/img/calendar.png" alt="crudInterno">Agendamentos</a>
+    </div>
+    <div Class="Prontuario">
+        <a href="prontuario.html"><img src="/src/img/perfil-de-usuario.png" alt="user">Prontuário eletrônico</a>
+    </div>
+    <div class="prescricao">
+      <a href="prescricao-eletronica.html"><img src="/src/img/prescricao.png" alt="user">Prescrição Eletrônica</a>
+    </div>
+    <div Class="Leito">
+      <a href="leito.html"><img src="/src/img/leito.png" alt="leito">Leitos</a>
+    </div>
+    <div class="cadastroPaciente">
+      <a href="crud-paciente.html"><img src="/src/img/crud-paciente.png" alt="user">Cadastro Paciente</a>
+    </div>
+    <div class="cadastroInterno">
+      <a href="crud-interno.html"><img src="/src/img/crud-interno.png" alt="user">Cadastro Interno</a>
+    </div>
+    <div class="Config">
+      <a href="config.html"><img src="/src/img/engrenagem.png" alt="engrenagem">Configurações</a>
+    </div>
+  </nav>
+</aside>
+
+  <main>
+    <header><h1>Cadastros Pacientes</h1></header>
+
+    <section class="cards">
+      <div class="card">
+        <h3>Selecione a área de que deseja cadastrar</h3>
+        <div class="inicioCrud">
+          <select id="tipo">
+            <option value="paciente">Paciente</option>
+            <option value="consulta">Consulta</option>
+            <option value="visitante">visitante</option>
+          </select>
+          <button id="myBtn">+</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="chart">
+
+    <input type="text" id="pesquisa" placeholder="Pesquisar..." > 
+
+      <div class="chart-grid">
+        <table id="registro"></table>
+      </div>
+    </section>
+
+    <footer>© 2025 - AOBA</footer>
+  </main>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form id="formulario">
+        <div id="campoFormulario"></div>
+        <button id="btnCadastrar" type="submit">Cadastrar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="/src/script/script-crud-paciente.js"></script>
+</body>
+</html>

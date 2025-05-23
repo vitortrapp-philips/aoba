@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="/src/css/style-calendar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=New+Rocker&display=swap"
+      rel="stylesheet"/>
+  </head>
+  <body>
+    <aside>
+      <button id="toggle-menu" class="toggle-btn">☰</button>
+      <div class="logo">
+        <h2>Menu</h2>
+            <img src="/src/img/logo1.png" alt="Logo AOBA" />
+      </div>
+      <nav>
+        <div class="Dash">
+          <a href="dashboard.html">
+            <img src="/src/img/grafico-preditivo.png" alt="grafico" />Dashboard
+          </a>
+        </div>
+        <div class="Calendar">
+          <a href="calendario.html">
+            <img src="/src/img/calendar.png" alt="crudInterno" />Agendamentos
+          </a>
+        </div>
+        <div class="Prontuario">
+          <a href="prontuario.html">
+            <img src="/src/img/perfil-de-usuario.png" alt="user" />Prontuário
+            eletrônico
+          </a>
+        </div>
+        <div class="prescricao">
+          <a href="prescricao-eletronica.html"
+            ><img src="/src/img/prescricao.png" alt="user" />Prescrição
+            Eletrônica</a
+          >
+        </div>
+        <div class="Leito">
+          <a href="leito.html">
+            <img src="/src/img/leito.png" alt="leito" />Leitos
+          </a>
+        </div>
+        <div class="CrudPaciente">
+          <a href="crud-paciente.html">
+            <img src="/src/img/crud-paciente.png" alt="crudPaciente" />Cadastro
+            Paciente
+          </a>
+        </div>
+        <div class="CrudInterno">
+          <a href="crud-interno.html">
+            <img src="/src/img/crud-interno.png" alt="crudInterno" />Cadastro
+            Interno
+          </a>
+        </div>
+        <div class="Config">
+          <a href="config.html">
+            <img src="/src/img/engrenagem.png" alt="engrenagem" />Configurações
+          </a>
+        </div>
+      </nav>
+    </aside>
+    <main>
+      <header>
+        <h1>Agendar consultas e exames</h1>
+        <span>Bem-vindo, Usuário</span>
+      </header>
+
+      <section class="calendar-section">
+        <h3>Calendário</h3>
+        <div class="calendar-filters">
+          <div class="month-selector">
+            <button id="prev-month">◀</button>
+            <span id="current-month">Maio 2025</span>
+            <button id="next-month">▶</button>
+          </div>
+
+          <div>
+            <label for="filtro-tipo">Filtrar:</label>
+            <select id="filtro-tipo">
+              <option value="todos">Todos</option>
+              <option value="consulta">Consultas</option>
+              <option value="exame">Exames</option>
+            </select>
+            <button
+              id="btn-apagar"
+              style="display: none;
+              "
+            >
+              Apagar tudo
+            </button>
+          </div>
+        </div>
+
+        <div class="calendar">
+          <div class="calendar-header">
+            <span id="titulo-calendario"></span>
+          </div>
+          <div class="calendar-days">
+            <div>Dom</div>
+            <div>Seg</div>
+            <div>Ter</div>
+            <div>Qua</div>
+            <div>Qui</div>
+            <div>Sex</div>
+            <div>Sáb</div>
+          </div>
+          <!-- IMPORTANTE: Deixe esta div vazia -->
+          <div class="calendar-dates"></div>
+        </div>
+      </section>
+
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <form id="formulario">
+            <div id="campoFormulario"></div>
+            <button id="btnCadastrar" type="submit">Agendar</button>
+          </form>
+        </div>
+      </div>
+
+      <section
+        id="agendamentos-hoje"
+        class="calendar-section"
+        style="display: none"
+      >
+        <h3>Agendamentos de hoje</h3>
+        <ul id="lista-hoje"></ul>
+      </section>
+
+      <footer>© 2025 - AOBA</footer>
+    </main>
+
+    <script src="/src/script/calendar.js"></script>
+  </body>
+</html>

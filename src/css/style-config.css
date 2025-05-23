@@ -1,0 +1,224 @@
+* {
+    font-family: "Chocolate Classical Sans", "roboto";
+}
+
+
+main section {
+  background-color: var(--secao);
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  font-family: "Chocolate Classical Sans", "roboto";
+}
+
+.header {
+  background-color: var(--header);
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--fundo);
+  color: var(--texto);
+}
+
+aside {
+  position: relative; 
+  background-color: var(--cor-1);
+  color: white;
+  padding: 20px;
+  transition: width 0.3s;
+  overflow: hidden; 
+}
+
+aside.minimized {
+  width: 60px;
+}
+
+aside.minimized h2,
+aside.minimized nav a,
+aside.minimized .logo {
+  display: none;
+}
+
+nav a img {
+  filter: invert(1); 
+}
+
+nav a:hover {
+  background-color: var(--cor-4);
+  transform: translateX(2px);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.Salvar{
+  background-color: var(--cor-2);
+  color: var(--cor-1);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button {
+  background-color: var(--cor-2);
+  color: var(--cor-1);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--cor-4);
+  color: white;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--cor-1);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.toggle-btn:hover {
+  background-color: var(--cor-4);
+  transform: scale(1.05);
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.logo h2{
+  position: relative;
+  top: 6px;
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+  margin-top: 18px;
+  object-fit: contain;
+}
+
+.Dash {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.Dash img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.Calendar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.Calendar img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.Prontuario {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.Prontuario img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.prescricao {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.prescricao img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.Config {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.Config img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.Leito {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.Leito img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.CrudPaciente {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.CrudPaciente img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.CrudInterno {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.CrudInterno img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
